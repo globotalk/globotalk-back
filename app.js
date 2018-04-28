@@ -11,7 +11,7 @@ var twitterRouter = require('./routes/twitter-route');
 
 var app = express();
 
-var port = 80;
+var port = process.env.PORT || 3000;
 
 // view engine setup
 app.use(logger('dev'));
